@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elias IT Firm | IT Equipment Supplier in South Africa</title>
+  <meta name="description" content="Elias IT Firm supplies business laptops, networking equipment, desktops, monitors, and accessories across South Africa with trusted support and fast delivery.">
+  <meta name="robots" content="index, follow">
+  <!-- SEO from stack overflow-->
+  <link rel="canonical" href="www.eliasitfirm.co.za">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:title" content="Elias IT Firm | IT Equipment Supplier in South Africa">
+  <meta property="og:description" content="Reliable IT equipment and business technology solutions for South African teams.">
+  <meta property="og:url" content="www.eliasitfirm.co.zal">
+  <meta property="og:image" content="www.eliasitfirm.co.za">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Elias IT Firm",
+    "image": "https://www.eliasitfirm.co.za/assets/images/logo-placeholder.svg",
+    "url": "https://www.eliasitfirm.co.za",
+    "telephone": "+27-11-555-0199",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "45 Rivonia Road, Sandton",
+      "addressLocality": "Johannesburg",
+      "addressRegion": "Gauteng",
+      "postalCode": "2196",
+      "addressCountry": "ZA"
+    },
+    "areaServed": "South Africa"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html" aria-label="Elias IT Firm home page">
+        <img src="assets/images/itlogo.webp" alt="Elias IT Firm logo placeholder" width="160" height="54">
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="finance.html">Finance Plan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+  <canvas id="canvas-particles"></canvas>
+
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <p class="tagline">
+        Serving businesses across Johannesburg, Cape Town, Durban, and Pretoria
+      </p>
+
+      <h1>Business IT Equipment Built for South African Growth</h1>
+
+      <p class="lead">
+        Elias IT Firm helps companies source dependable laptops,
+        desktops, networking hardware, monitors, and accessories
+        at competitive local pricing in Rand (ZAR).
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="products.html">Shop Products</a>
+        <a class="btn btn-outline" href="finance.html">View Finance Plan</a>
+      </div>
+    </div>
+
+    <div class="hero-image-box">
+      <img src="assets/images/heroimg.webp" alt="IT equipment hero image">
+    </div>
+  </div>
+</section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Why South African Businesses Choose Us</h2>
+        <div class="cards three-col">
+          <article class="card">
+            <h3>Trusted Equipment</h3>
+            <p>We source genuine equipment from trusted vendors with local warranty support.</p>
+          </article>
+          <article class="card">
+            <h3>Fast Local Delivery</h3>
+            <p>Quick dispatch and delivery options across all major provinces in South Africa.</p>
+          </article>
+          <article class="card">
+            <h3>Business Quotes</h3>
+            <p>Get tailored quotes for teams, schools, and growing companies with volume discounts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2>Featured IT Equipment</h2>
+        <div class="cards three-col">
+          <article class="card product-card">
+            <!-- PRODUCT IMAGE1 -->
+            <img src="assets/images/laptop.webp" alt="Business laptop " loading="lazy">
+            <h3>Business Laptop Pro 14"</h3>
+            <p>Intel i7, 16GB RAM, 512GB SSD</p>
+            <p class="price">R22 499</p>
+          </article>
+          <article class="card product-card">
+            <!-- PRODUCT IMAGE 2-->
+            <img src="assets/images/router.webp" alt="wifi image" loading="lazy">
+            <h3>Secure Wi-Fi 6 Router</h3>
+            <p>High-speed secure networking for office teams</p>
+            <p class="price">R5 399</p>
+          </article>
+          <article class="card product-card">
+            <!-- PRODUCT IMAGE 3-->
+            <img src="assets/images/Mini Office Desktop.webp" alt="27 inch monitor image" loading="lazy">
+            <h3>27" QHD Productivity Monitor</h3>
+            <p>Crisp display and ergonomic stand for daily work</p>
+            <p class="price">R4 899</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 Elias IT Firm. All rights reserved.</p>
+      <p><a href="contact.html">Get a Quote</a></p>
+    </div>
+  </footer>
+
+  <script>
+const canvas = document.getElementById("canvas-particles");
+const ctx = canvas.getContext("2d");
+
+let particles = [];
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = document.querySelector(".hero").offsetHeight;
+}
+
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+
+class Particle {
+  constructor() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+
+    this.size = Math.random() * 4 + 1;
+
+    this.speedX = (Math.random() - 0.5) * 1;
+    this.speedY = (Math.random() - 0.5) * 1;
+
+    this.opacity = Math.random() * 0.5 + 0.2;
+  }
+
+  update() {
+    this.x += this.speedX;
+    this.y += this.speedY;
+
+    if (this.x < 0 || this.x > canvas.width) {
+      this.speedX *= -1;
+    }
+
+    if (this.y < 0 || this.y > canvas.height) {
+      this.speedY *= -1;
+    }
+  }
+
+  draw() {
+    ctx.beginPath();
+    ctx.fillStyle = `rgba(15,79,191,${this.opacity})`;
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
+function initParticles() {
+  particles = [];
+
+  for (let i = 0; i < 80; i++) {
+    particles.push(new Particle());
+  }
+}
+
+function connectParticles() {
+  for (let a = 0; a < particles.length; a++) {
+    for (let b = a; b < particles.length; b++) {
+      let dx = particles[a].x - particles[b].x;
+      let dy = particles[a].y - particles[b].y;
+
+      let distance = dx * dx + dy * dy;
+
+      if (distance < 12000) {
+        ctx.beginPath();
+        ctx.strokeStyle = "rgba(15,79,191,0.08)";
+        ctx.lineWidth = 1;
+        ctx.moveTo(particles[a].x, particles[a].y);
+        ctx.lineTo(particles[b].x, particles[b].y);
+        ctx.stroke();
+      }
+    }
+  }
+}
+
+function animateParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  particles.forEach((particle) => {
+    particle.update();
+    particle.draw();
+  });
+
+  connectParticles();
+
+  requestAnimationFrame(animateParticles);
+}
+
+initParticles();
+animateParticles();
+</script>
+
+</body>
+</html>

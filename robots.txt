@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# SEO: Replace with your final live domain when deployed
+Sitemap: https://www.eliasitfirm.co.za/sitemap.xml
